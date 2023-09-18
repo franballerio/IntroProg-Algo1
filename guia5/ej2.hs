@@ -78,14 +78,13 @@ mismosElementos (x:xs) (y:ys)
  | x == y = mismosElementos xs ys
  | otherwise = False
 
-
 capicua :: Eq t => [t] -> Bool
 capicua x = x == reverso x
 
-
 reverso :: Eq t => [t] -> [t]
 reverso [] = []
-reverso xs = ultimo xs : (reverso xs)
+reverso (x:[]) = [x]
+reverso (x:xs) = reverso xs ++ [x]
 
 ultimo :: [t] -> t
 ultimo (x:[]) = x
@@ -96,3 +95,4 @@ eliminarElem [] y = []
 eliminarElem (x:xs) y 
  | x == y = eliminarElem xs y 
  | otherwise = x:(eliminarElem xs y) 
+
