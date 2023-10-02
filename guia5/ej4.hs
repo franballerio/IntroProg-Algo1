@@ -29,6 +29,11 @@ palabrasAux (x:xs) y
     | x /= ' ' = (palabrasAux xs (y ++ [x]))
     | x == ' ' = [y] ++ (palabrasAux xs [])
 
+
+palabrasCulo :: [Char] -> [[Char]]
+palabrasCulo x = palabrasAux x ['a']
+
+
 {- esta funcion lo que hace es separar la primer lista de Char que le pasamos y hace 
 una lista con palabras. Por cada caracter que lee lo mete en una lista
 y si el caracter es ' ' agarra la lista que creo antes y se la suma a una nueva
