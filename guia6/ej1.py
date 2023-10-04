@@ -56,3 +56,11 @@ def factorial() -> int:
 
 
 # 5.
+
+def perimetro() -> float:
+    '''devuelve el perimetro de una cirunferencia de radio 1'''
+    x = 2 * math.pi
+    print(x)
+
+
+# 6.
