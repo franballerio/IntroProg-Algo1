@@ -1,6 +1,5 @@
 '''Resolvemos el ej3 de la guia 6, sin usar el if '''
 
-import math
 
 # 1.
 
