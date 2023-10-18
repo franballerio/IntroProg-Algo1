@@ -79,16 +79,25 @@ def viaje_al_pasado(partida:  int, llegada: int) -> str:
 # 6.
 def viaje_a_arist(partida:  int) -> str:
     '''384 < partida'''
-    x: int = partida
-    y: int = 384
-    z: int = 0
-    print(f"Estamos en el anio {x} y viajaremos al {y}")
-    x -= 20
-    while x >= y:
-        z += 20
-        print(f"Viajo veinte anios al pasado, estamos en el anio {x}")
+    if partida > -384:
+        x: int = partida
+        y: int = -384
+        z: int = 0
+        if x >= 0:
+            print(f"Estamos en el anio {x}d.C. y viajaremos al {-y} a.C.")
+        else:
+            print(f"Estamos en el anio {-x}a.C. y viajaremos al {-y} a.C.")
         x -= 20
-    print(f"Llegamos con Aristoteles!!, viajamos en total {z} anios")
+        while x >= y:
+            z += 20
+            if x >= 0:
+                print(
+                    f"Viajo veinte anios al pasado, estamos en el anio {x} d.C")
+            else:
+                print(
+                    f"Viajo veinte anios al pasado, estamos en el anio {-x} a.C")
+            x -= 20
+        print(f"Llegamos con Aristoteles!!, viajamos en total {z} anios")
 
 
-# viaje_a_arist(446)
+# viaje_a_arist(anio)

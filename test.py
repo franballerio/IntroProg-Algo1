@@ -53,3 +53,8 @@ def nums2():
     for num in range(10, 41, 1):
         if num % 2 == 0:
             print(num)
+
+
+caa = [1,2,3,4,5,4,3,3,3,2,2,2,2,2,2,2]
+
+print(caa.index(3))
