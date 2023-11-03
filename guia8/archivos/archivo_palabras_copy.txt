@@ -1,0 +1,8 @@
+esto es una prueba
+#con comentarios
+una prueba para probar
+      #la funcion que cuenta palabras
+y que hay que probar en una prueba
+#prueba prueba prueba
+  aguante la uba
+aguante #racin

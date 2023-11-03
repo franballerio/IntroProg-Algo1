@@ -1,5 +1,7 @@
 '''funciones sobre listas de listas'''
-
+import numpy as np
+import random
+import array
 # debemos reutilizar estas funciones que definimos en el ejercicio 1
 
 
@@ -62,3 +64,22 @@ def filas_ordenadas(matrix: list) -> bool:
             else:
                 resu.append(False)
     return resu
+
+
+# 4.
+
+def matriz_elevada(d: int, p: int):
+    '''eleva a la p, una matriz random de d x d dimensiones'''
+    m = np.random.randint(0, 3, (d, d)) ^ 3
+    m = np.array(m)
+    print(m)  # mostramos la matriz original creada
+    print("-----")
+
+    mE = m
+    for i in range(1, p):
+        mE = m @ mE
+    # multiplicamos a la matriz x ella misma p veces
+    return mE
+
+
+print(matriz_elevada(2, 4))

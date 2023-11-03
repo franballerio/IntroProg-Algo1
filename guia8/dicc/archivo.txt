@@ -1,0 +1,6 @@
+Este es un archivo de prueba para el ejercicio 19 de la guia numero 8
+En esta funcion tenemos que, en un diccionario, poner cuantas palabras hay con tal longitud
+El tipo diccionario nunca lo habiamos usado antes xd
+Vamos a probar con palabras mas largas como yuxtaposicion o mas cortas como lol
+Este ejemplo termina aca.
+quiero que la palabra que mas se repita sea caca
